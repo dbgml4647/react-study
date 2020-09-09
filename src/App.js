@@ -8,8 +8,8 @@ function App() {
  
   return (
     <Wrapper name = "너는 누구냐">
-      <Hello name="유희짱"/>
-      <Hello name="새로운 손님분, 안녕하세요"/>
+      <Hello name="유희짱" isSpecial= {true}/>
+      <Hello name="나는 거짓말이지롱"/>
     </Wrapper>
   );
 }
