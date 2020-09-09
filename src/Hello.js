@@ -1,7 +1,7 @@
 import React from 'react';
-function Hello(){
+function Hello(props){
 
-    return <div>안녕하세요!</div>;
+    return <div>안녕하세요! {props.name}</div>;
 
 }
 
