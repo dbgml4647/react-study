@@ -1,6 +1,6 @@
 import React from 'react';
 
-function User({ user}){
+function User(props){
     return (
     <div>
         <b>{user.name}</b>
@@ -13,27 +13,7 @@ function User({ user}){
 
 function UserList(){
 
-    const users = [
-        {
-            id :1,
-            name : "Yuhee", 
-            email : "dbml4647@naver.com"
-        },
-
-        {
-            id : 2, 
-            name : "tester",
-            email : "tester@example.com"
-        },
-
-        {
-            id : 3, 
-            name : "tester2",
-            email : 'tester2@example.com'
-        }
-
-    ];
-
+   
 
     return (
         <div>
