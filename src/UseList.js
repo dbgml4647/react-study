@@ -1,27 +1,29 @@
 import React from 'react';
 
-function User(props){
+function User({user}){
+    console.log("gggggg")
+    console.log(user)
     return (
     <div>
         <b>{user.name}</b>
         <span>{user.email}</span>    
     </div>
-    )
+    );
 }
 
+function UserList({users}){
 
-
-function UserList(){
-
-   
-
+    console.log(users)
     return (
-        <div>
-            <User user = {users[0]}/>
-            <User user = {users[1]}/>
-            <User user = {users[2]}/>
+        <div> 
+            {
+                users.map(
+                    (user, index) => (<User user = {user} key = {user.id}/>)
+                )
+            }
         </div>
-    )
+    );
+
 }
 
 
